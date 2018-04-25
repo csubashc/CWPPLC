@@ -55,12 +55,12 @@ public class TestBase
 		
 		if(browserName.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\Tools\\chromedriver.exe");	
+			System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\Tools\\chromedriver.exe");	
 			driver = new ChromeDriver(); 
 		}
 		else if(browserName.equals("FF"))
 		{
-			System.setProperty("webdriver.gecko.driver", "D:\\Selenium\\Tools\\geckodriver.exe");	
+			System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\Tools\\geckodriver.exe");	
 			driver = new FirefoxDriver(); 
 		}
 		
@@ -74,7 +74,7 @@ public class TestBase
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		//driver.get(prop.getProperty("url"));
+		driver.get(prop.getProperty("url"));
 		
 	}
 	

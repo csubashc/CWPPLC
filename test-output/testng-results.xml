@@ -1,48 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-04-18T16:30:15Z" name="Default suite" finished-at="2018-04-18T16:31:03Z" duration-ms="48287">
+  <suite started-at="2018-04-24T10:26:16Z" name="Default suite" finished-at="2018-04-24T10:26:16Z" duration-ms="164">
     <groups>
     </groups>
-    <test started-at="2018-04-18T16:30:15Z" name="Default test" finished-at="2018-04-18T16:31:03Z" duration-ms="48287">
-      <class name="com.cpwplc.qa.testpage2.Redirect">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cpwplc.qa.testpage2.Redirect@68e965f5]" started-at="2018-04-18T17:30:27Z" name="setUp" finished-at="2018-04-18T17:30:32Z" duration-ms="5326" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="redirect(java.lang.String, java.lang.String)[pri:1, instance:com.cpwplc.qa.testpage2.Redirect@68e965f5]" started-at="2018-04-18T17:30:32Z" name="redirect" data-provider="getCPWRedirectURL" finished-at="2018-04-18T17:30:32Z" duration-ms="280" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://www.carphonewarehouse.com/passwordReset]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[/password-reset.html]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
+    <test started-at="2018-04-24T10:26:16Z" name="Default test" finished-at="2018-04-24T10:26:16Z" duration-ms="164">
+      <class name="com.cpwplc.qa.endtoend.HomePage">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.cpwplc.qa.endtoend.HomePage@3cc1435c]" started-at="2018-04-24T11:26:16Z" name="setup" finished-at="2018-04-24T11:26:16Z" duration-ms="117" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[expected [/password-reset.html] but found [http://password-reset.html/]]]>
+              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DC102297', ip: '10.44.126.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
+Driver info: driver.version: FirefoxDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [/password-reset.html] but found [http://password-reset.html/]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.cpwplc.qa.testpage2.Redirect.redirect(Redirect.java:49)
+              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DC102297', ip: '10.44.126.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:115)
+	at java.base/java.util.Optional.orElseGet(Unknown Source)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:257)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:204)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at com.cpwplc.qa.base.TestBase.initialization(TestBase.java:64)
+	at com.cpwplc.qa.endtoend.HomePage.setup(HomePage.java:29)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
@@ -64,50 +57,39 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- redirect -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cpwplc.qa.testpage2.Redirect@68e965f5]" started-at="2018-04-18T17:30:32Z" name="tearDown" finished-at="2018-04-18T17:30:33Z" duration-ms="636" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cpwplc.qa.testpage2.Redirect@68e965f5]" started-at="2018-04-18T17:30:33Z" name="setUp" finished-at="2018-04-18T17:30:37Z" duration-ms="3961" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="redirect(java.lang.String, java.lang.String)[pri:1, instance:com.cpwplc.qa.testpage2.Redirect@68e965f5]" started-at="2018-04-18T17:30:37Z" name="redirect" data-provider="getCPWRedirectURL" finished-at="2018-04-18T17:30:40Z" duration-ms="3093" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://www.carphonewarehouse.com/apple/iphone-se]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://www.carphonewarehouse.com/apple/iphone-se.html]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- setup -->
+        <test-method signature="accept_cookie_test()[pri:1, instance:com.cpwplc.qa.endtoend.HomePage@3cc1435c]" started-at="2018-04-24T11:26:16Z" name="accept_cookie_test" finished-at="2018-04-24T11:26:16Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[expected [https://www.carphonewarehouse.com/apple/iphone-se.html] but found [https://www.carphonewarehouse.com/apple/iphone-se.html#!colour=spacegrey&capacity=32GB&dealType=pm]]]>
+              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DC102297', ip: '10.44.126.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
+Driver info: driver.version: FirefoxDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://www.carphonewarehouse.com/apple/iphone-se.html] but found [https://www.carphonewarehouse.com/apple/iphone-se.html#!colour=spacegrey&capacity=32GB&dealType=pm]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.cpwplc.qa.testpage2.Redirect.redirect(Redirect.java:49)
+              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DC102297', ip: '10.44.126.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:115)
+	at java.base/java.util.Optional.orElseGet(Unknown Source)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:257)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:204)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at com.cpwplc.qa.base.TestBase.initialization(TestBase.java:64)
+	at com.cpwplc.qa.endtoend.HomePage.setup(HomePage.java:29)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
@@ -129,87 +111,69 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- redirect -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cpwplc.qa.testpage2.Redirect@68e965f5]" started-at="2018-04-18T17:30:40Z" name="tearDown" finished-at="2018-04-18T17:30:41Z" duration-ms="624" status="PASS">
+        </test-method> <!-- accept_cookie_test -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.cpwplc.qa.endtoend.HomePage@3cc1435c]" started-at="2018-04-24T11:26:16Z" name="setup" finished-at="2018-04-24T11:26:16Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cpwplc.qa.testpage2.Redirect@68e965f5]" started-at="2018-04-18T17:30:41Z" name="setUp" finished-at="2018-04-18T17:30:45Z" duration-ms="3986" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="navigate_to_mobile()[pri:2, instance:com.cpwplc.qa.endtoend.HomePage@3cc1435c]" started-at="2018-04-24T11:26:16Z" name="navigate_to_mobile" finished-at="2018-04-24T11:26:16Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DC102297', ip: '10.44.126.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DC102297', ip: '10.44.126.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:115)
+	at java.base/java.util.Optional.orElseGet(Unknown Source)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:257)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:204)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at com.cpwplc.qa.base.TestBase.initialization(TestBase.java:64)
+	at com.cpwplc.qa.endtoend.HomePage.setup(HomePage.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="redirect(java.lang.String, java.lang.String)[pri:1, instance:com.cpwplc.qa.testpage2.Redirect@68e965f5]" started-at="2018-04-18T17:30:45Z" name="redirect" data-provider="getCPWRedirectURL" finished-at="2018-04-18T17:30:47Z" duration-ms="2501" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://www.carphonewarehouse.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://www.carphonewarehouse.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- redirect -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cpwplc.qa.testpage2.Redirect@68e965f5]" started-at="2018-04-18T17:30:47Z" name="tearDown" finished-at="2018-04-18T17:30:48Z" duration-ms="613" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cpwplc.qa.testpage2.Redirect@68e965f5]" started-at="2018-04-18T17:30:48Z" name="setUp" finished-at="2018-04-18T17:30:52Z" duration-ms="3926" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="redirect(java.lang.String, java.lang.String)[pri:1, instance:com.cpwplc.qa.testpage2.Redirect@68e965f5]" started-at="2018-04-18T17:30:52Z" name="redirect" data-provider="getCPWRedirectURL" finished-at="2018-04-18T17:30:55Z" duration-ms="2807" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://www.carphonewarehouse.com/pay-monthly.html]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://www.carphonewarehouse.com/mobiles/pay-monthly.html]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- redirect -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cpwplc.qa.testpage2.Redirect@68e965f5]" started-at="2018-04-18T17:30:55Z" name="tearDown" finished-at="2018-04-18T17:30:55Z" duration-ms="739" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cpwplc.qa.testpage2.Redirect@68e965f5]" started-at="2018-04-18T17:30:55Z" name="setUp" finished-at="2018-04-18T17:30:59Z" duration-ms="3909" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="redirect(java.lang.String, java.lang.String)[pri:1, instance:com.cpwplc.qa.testpage2.Redirect@68e965f5]" started-at="2018-04-18T17:30:59Z" name="redirect" data-provider="getCPWRedirectURL" finished-at="2018-04-18T17:31:02Z" duration-ms="2914" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://www.carphonewarehouse.com/pay-as-you-go.html]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://www.carphonewarehouse.com/mobiles/pay-as-you-go.html]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- redirect -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cpwplc.qa.testpage2.Redirect@68e965f5]" started-at="2018-04-18T17:31:02Z" name="tearDown" finished-at="2018-04-18T17:31:03Z" duration-ms="800" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.cpwplc.qa.testpage2.Redirect -->
+        </test-method> <!-- navigate_to_mobile -->
+      </class> <!-- com.cpwplc.qa.endtoend.HomePage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

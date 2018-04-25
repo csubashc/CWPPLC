@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/2</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 18 17:30:15 BST 2018</td>
+<td>Started on:</td><td>Tue Apr 24 11:26:16 BST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>48 seconds (48287 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (164 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,28 +68,34 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.cpwplc.qa.testpage2.Redirect.redirect()'><b>redirect</b><br>Test class: com.cpwplc.qa.testpage2.Redirect<br>Parameters: http://www.carphonewarehouse.com/passwordReset, /password-reset.html</td>
-<td><div><pre>java.lang.AssertionError: expected [/password-reset.html] but found [http://password-reset.html/]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.cpwplc.qa.testpage2.Redirect.redirect(Redirect.java:49)
+<td title='com.cpwplc.qa.endtoend.HomePage.setup()'><b>setup</b><br>Test class: com.cpwplc.qa.endtoend.HomePage</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DC102297&apos;, ip: &apos;10.44.126.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:115)
+	at java.base/java.util.Optional.orElseGet(Unknown Source)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:257)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:204)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at com.cpwplc.qa.base.TestBase.initialization(TestBase.java:64)
+	at com.cpwplc.qa.endtoend.HomePage.setup(HomePage.java:29)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
@@ -109,21 +115,27 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace299783910", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace299783910'><pre>java.lang.AssertionError: expected [/password-reset.html] but found [http://password-reset.html/]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.cpwplc.qa.testpage2.Redirect.redirect(Redirect.java:49)
+</pre></div><a href='#' onClick='toggleBox("stack-trace438589491", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace438589491'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DC102297&apos;, ip: &apos;10.44.126.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:115)
+	at java.base/java.util.Optional.orElseGet(Unknown Source)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:257)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:204)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at com.cpwplc.qa.base.TestBase.initialization(TestBase.java:64)
+	at com.cpwplc.qa.endtoend.HomePage.setup(HomePage.java:29)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
@@ -145,23 +157,50 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.cpwplc.qa.testpage2.Redirect@68e965f5</td></tr>
+<td>com.cpwplc.qa.endtoend.HomePage@3cc1435c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.cpwplc.qa.testpage2.Redirect.redirect()'><b>redirect</b><br>Test class: com.cpwplc.qa.testpage2.Redirect<br>Parameters: http://www.carphonewarehouse.com/apple/iphone-se, https://www.carphonewarehouse.com/apple/iphone-se.html</td>
-<td><div><pre>java.lang.AssertionError: expected [https://www.carphonewarehouse.com/apple/iphone-se.html] but found [https://www.carphonewarehouse.com/apple/iphone-se.html#!colour=spacegrey&amp;capacity=32GB&amp;dealType=pm]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.cpwplc.qa.testpage2.Redirect.redirect(Redirect.java:49)
+<td title='com.cpwplc.qa.endtoend.HomePage.setup()'><b>setup</b><br>Test class: com.cpwplc.qa.endtoend.HomePage</td>
+<td></td>
+<td>0</td>
+<td>com.cpwplc.qa.endtoend.HomePage@3cc1435c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cpwplc.qa.endtoend.HomePage.accept_cookie_test()'><b>accept_cookie_test</b><br>Test class: com.cpwplc.qa.endtoend.HomePage</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DC102297&apos;, ip: &apos;10.44.126.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:115)
+	at java.base/java.util.Optional.orElseGet(Unknown Source)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:257)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:204)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at com.cpwplc.qa.base.TestBase.initialization(TestBase.java:64)
+	at com.cpwplc.qa.endtoend.HomePage.setup(HomePage.java:29)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
@@ -181,21 +220,27 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace447320069", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace447320069'><pre>java.lang.AssertionError: expected [https://www.carphonewarehouse.com/apple/iphone-se.html] but found [https://www.carphonewarehouse.com/apple/iphone-se.html#!colour=spacegrey&amp;capacity=32GB&amp;dealType=pm]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.cpwplc.qa.testpage2.Redirect.redirect(Redirect.java:49)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1020154737", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1020154737'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DC102297&apos;, ip: &apos;10.44.126.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:115)
+	at java.base/java.util.Optional.orElseGet(Unknown Source)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:257)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:204)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at com.cpwplc.qa.base.TestBase.initialization(TestBase.java:64)
+	at com.cpwplc.qa.endtoend.HomePage.setup(HomePage.java:29)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
@@ -216,31 +261,92 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>3</td>
-<td>com.cpwplc.qa.testpage2.Redirect@68e965f5</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>0</td>
+<td>com.cpwplc.qa.endtoend.HomePage@3cc1435c</td></tr>
 <tr>
-<td title='com.cpwplc.qa.testpage2.Redirect.redirect()'><b>redirect</b><br>Test class: com.cpwplc.qa.testpage2.Redirect<br>Parameters: http://www.carphonewarehouse.com, https://www.carphonewarehouse.com/</td>
-<td></td>
-<td>2</td>
-<td>com.cpwplc.qa.testpage2.Redirect@68e965f5</td></tr>
-<tr>
-<td title='com.cpwplc.qa.testpage2.Redirect.redirect()'><b>redirect</b><br>Test class: com.cpwplc.qa.testpage2.Redirect<br>Parameters: http://www.carphonewarehouse.com/pay-monthly.html, https://www.carphonewarehouse.com/mobiles/pay-monthly.html</td>
-<td></td>
-<td>2</td>
-<td>com.cpwplc.qa.testpage2.Redirect@68e965f5</td></tr>
-<tr>
-<td title='com.cpwplc.qa.testpage2.Redirect.redirect()'><b>redirect</b><br>Test class: com.cpwplc.qa.testpage2.Redirect<br>Parameters: http://www.carphonewarehouse.com/pay-as-you-go.html, https://www.carphonewarehouse.com/mobiles/pay-as-you-go.html</td>
-<td></td>
-<td>2</td>
-<td>com.cpwplc.qa.testpage2.Redirect@68e965f5</td></tr>
+<td title='com.cpwplc.qa.endtoend.HomePage.navigate_to_mobile()'><b>navigate_to_mobile</b><br>Test class: com.cpwplc.qa.endtoend.HomePage</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DC102297&apos;, ip: &apos;10.44.126.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:115)
+	at java.base/java.util.Optional.orElseGet(Unknown Source)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:257)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:204)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at com.cpwplc.qa.base.TestBase.initialization(TestBase.java:64)
+	at com.cpwplc.qa.endtoend.HomePage.setup(HomePage.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1439394198", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1439394198'><pre>org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DC102297&apos;, ip: &apos;10.44.126.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.1&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:115)
+	at java.base/java.util.Optional.orElseGet(Unknown Source)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:257)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:204)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at com.cpwplc.qa.base.TestBase.initialization(TestBase.java:64)
+	at com.cpwplc.qa.endtoend.HomePage.setup(HomePage.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.cpwplc.qa.endtoend.HomePage@3cc1435c</td></tr>
 </table><p>
 </body>
 </html>

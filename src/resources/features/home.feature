@@ -17,12 +17,10 @@
 ## (Comments)
 #Sample Feature Definition Template
 @tag
-Feature: Free CRM Login  feature
+Feature: CPW Home Page Load
 
-  Scenario: Free CRM Login Test Scenario
-    Given user is login page
-    When title of login pape is freecrm
-    Then user enters username And user enters password
-    Then user click on Login button
-    And user is on homepage
-  
+  	Scenario: CPW Home Page Load Scenario
+    Given user is on a browser
+    When the user sends CPW.COM
+    Then the CPW Home Pages loads without any error
+   

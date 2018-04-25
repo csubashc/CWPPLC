@@ -1,7 +1,5 @@
 package com.cpwplc.qa.endtoend;
 
-
-
 import java.io.IOException;
 
 import org.testng.annotations.AfterMethod;

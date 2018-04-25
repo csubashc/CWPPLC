@@ -8,6 +8,8 @@ import com.cpwplc.qa.base.TestBase;
 
 public class Homepage extends TestBase
 {
+
+//========================Home Page Object Repository===============================
 	
 	@FindBy(xpath = "//*[@id=\"cookieagree\"]")
 	WebElement cookie;
@@ -16,11 +18,14 @@ public class Homepage extends TestBase
 	WebElement shopclick;
 
 
-//Initializing the Page Objects:
+//=========================Initializing the Page Objects===========================
+	
 	public Homepage()
 	{
 		PageFactory.initElements(driver, this);
 	}
+
+//============================Home Page Methods====================================
 	
 	public void AcceptCookie()
 	{
