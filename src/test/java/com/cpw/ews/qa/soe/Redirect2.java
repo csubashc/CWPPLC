@@ -1,12 +1,13 @@
-package com.cpwolc.qa.redirect;
+package com.cpw.ews.qa.soe;
 
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import com.cpwplc.qa.base.TestBase;
-import com.cpwplc.qa.util.TestUtil;
+
+import com.cpw.ews.qa.base.TestBase;
+import com.cpw.ews.qa.util.TestUtil;
 
 
 public class Redirect2 extends TestBase

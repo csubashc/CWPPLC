@@ -1,5 +1,5 @@
-package com.cpwplc.qa.endtoend;
+package com.cpw.ews.qa.testcases;
 
-public class Tarrif {
+public class TarrifPage {
 
 }

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.cpwplc.qa.endtoend.HomePage">
+      <class name="com.cpw.ews.qa.testcases.PayMPageTest">
         <methods>
-          <include name="accept_cookie_test"/>
-          <include name="teardown"/>
-          <include name="navigate_to_mobile"/>
+          <include name="endReport"/>
           <include name="setup"/>
+          <include name="navigate_to_PagM_from_homepage_and_verify_pagetitle"/>
+          <include name="setExtent"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.cpwplc.qa.endtoend.HomePage -->
+      </class> <!-- com.cpw.ews.qa.testcases.PayMPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

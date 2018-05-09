@@ -1,4 +1,4 @@
-package com.cpwplc.qa.util;
+package com.cpw.ews.qa.util;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -16,12 +16,12 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 
-import com.cpwplc.qa.base.TestBase;
+import com.cpw.ews.qa.base.TestBase;
 
 public class TestUtil extends TestBase
 {
-	public static long PAGE_LOAD_TIMEOUT = 20;
-	public static long IMPLICIT_WAIT = 20;
+	public static long PAGE_LOAD_TIMEOUT = 50;
+	public static long IMPLICIT_WAIT = 50;
 	public static String TESTDATA_SHEET_PATH = "D:\\Carphone\\cw\\src\\main\\java\\com\\cpwplc\\qa\\testdata\\CPWRedirects.xlsx";
 	static Workbook book;
 	static Sheet sheet;
@@ -90,30 +90,6 @@ public class TestUtil extends TestBase
 		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
 	}
 	
-	public void closepopup() 
-	{
-		String expectedFrameID="edr_l_first";
-	    List<WebElement> lst= driver.findElements(By.tagName("iframe"));
-	    System.out.println("Number of Iframes identified is "+lst.size());
-	    int flag=0;
-	    for(int i=0;i<lst.size();i++)
-	    {
-	        String actualFrameID=lst.get(i).getAttribute("id");
-	        System.out.println(lst.get(i).getAttribute("id"));
-	        if(expectedFrameID.equals(actualFrameID))
-	        {
-	            flag=1;
-	            break;
-	        }
-	    }
-		if(flag==1)
-		{
-			System.out.println("Popu up Found");
-			driver.switchTo().frame("edr_l_first");
-			driver.findElement(By.xpath("//*[@id='edr_layer_no']/img")).click();
-			System.out.println("Pop up Closed");
-		}
-	}
-	
+		
 			
 }

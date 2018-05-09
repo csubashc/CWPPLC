@@ -1,5 +1,5 @@
 
-package com.cpwplc.qa.util;
+package com.cpw.ews.qa.util;
 
 /*************************************** PURPOSE **********************************
 
@@ -19,7 +19,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 
-import com.cpwplc.qa.base.TestBase;
+import com.cpw.ews.qa.base.TestBase;
 
 
 public class WebEventListener extends TestBase implements WebDriverEventListener {

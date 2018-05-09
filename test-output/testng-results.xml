@@ -1,153 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-04-24T10:26:16Z" name="Default suite" finished-at="2018-04-24T10:26:16Z" duration-ms="164">
+  <suite name="CPWPLC Test Suite" duration-ms="95354" started-at="2018-05-08T17:13:32Z" finished-at="2018-05-08T17:15:07Z">
     <groups>
     </groups>
-    <test started-at="2018-04-24T10:26:16Z" name="Default test" finished-at="2018-04-24T10:26:16Z" duration-ms="164">
-      <class name="com.cpwplc.qa.endtoend.HomePage">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.cpwplc.qa.endtoend.HomePage@3cc1435c]" started-at="2018-04-24T11:26:16Z" name="setup" finished-at="2018-04-24T11:26:16Z" duration-ms="117" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'DC102297', ip: '10.44.126.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'DC102297', ip: '10.44.126.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:115)
-	at java.base/java.util.Optional.orElseGet(Unknown Source)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:257)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:204)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
-	at com.cpwplc.qa.base.TestBase.initialization(TestBase.java:64)
-	at com.cpwplc.qa.endtoend.HomePage.setup(HomePage.java:29)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+    <test name="CPW Customer Journey" duration-ms="95354" started-at="2018-05-08T17:13:32Z" finished-at="2018-05-08T17:15:07Z">
+      <class name="com.cpw.ews.qa.testcases.HomePageTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.cpw.ews.qa.testcases.HomePageTest@78c03f1f]" name="setExtent" is-config="true" duration-ms="250" started-at="2018-05-08T18:13:32Z" finished-at="2018-05-08T18:13:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.cpw.ews.qa.testcases.PayGPageTest@4fe3c938]" name="setExtent" is-config="true" duration-ms="0" started-at="2018-05-08T18:13:32Z" finished-at="2018-05-08T18:13:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.cpw.ews.qa.testcases.PayMPageTest@5ec0a365]" name="setExtent" is-config="true" duration-ms="0" started-at="2018-05-08T18:13:32Z" finished-at="2018-05-08T18:13:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.cpw.ews.qa.testcases.HomePageTest@78c03f1f]" name="setup" is-config="true" duration-ms="35056" started-at="2018-05-08T18:13:32Z" finished-at="2018-05-08T18:14:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="accept_cookie_test()[pri:1, instance:com.cpwplc.qa.endtoend.HomePage@3cc1435c]" started-at="2018-04-24T11:26:16Z" name="accept_cookie_test" finished-at="2018-04-24T11:26:16Z" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'DC102297', ip: '10.44.126.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'DC102297', ip: '10.44.126.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:115)
-	at java.base/java.util.Optional.orElseGet(Unknown Source)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:257)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:204)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
-	at com.cpwplc.qa.base.TestBase.initialization(TestBase.java:64)
-	at com.cpwplc.qa.endtoend.HomePage.setup(HomePage.java:29)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="accept_cookie_test()[pri:1, instance:com.cpw.ews.qa.testcases.HomePageTest@78c03f1f]" name="accept_cookie_test" duration-ms="428" started-at="2018-05-08T18:14:07Z" finished-at="2018-05-08T18:14:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accept_cookie_test -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.cpwplc.qa.endtoend.HomePage@3cc1435c]" started-at="2018-04-24T11:26:16Z" name="setup" finished-at="2018-04-24T11:26:16Z" duration-ms="0" status="SKIP">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.cpw.ews.qa.testcases.HomePageTest@78c03f1f]" name="teardown" is-config="true" duration-ms="1185" started-at="2018-05-08T18:14:07Z" finished-at="2018-05-08T18:14:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=accept_cookie_test status=SUCCESS method=HomePageTest.accept_cookie_test()[pri:1, instance:com.cpw.ews.qa.testcases.HomePageTest@78c03f1f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.cpw.ews.qa.testcases.HomePageTest@78c03f1f]" name="setup" is-config="true" duration-ms="9247" started-at="2018-05-08T18:14:39Z" finished-at="2018-05-08T18:14:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="navigate_to_mobile()[pri:2, instance:com.cpwplc.qa.endtoend.HomePage@3cc1435c]" started-at="2018-04-24T11:26:16Z" name="navigate_to_mobile" finished-at="2018-04-24T11:26:16Z" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="verify_homepage_tile_test()[pri:2, instance:com.cpw.ews.qa.testcases.HomePageTest@78c03f1f]" name="verify_homepage_tile_test" duration-ms="458" started-at="2018-05-08T18:14:48Z" finished-at="2018-05-08T18:14:49Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'DC102297', ip: '10.44.126.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
-Driver info: driver.version: FirefoxDriver]]>
+              <![CDATA[Home Page title not matched expected [Compare Our Best Mobile Phone Deals | Carphone Warehouse123] but found [Compare Our Best Mobile Phone Deals | Carphone Warehouse]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'DC102297', ip: '10.44.126.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:115)
-	at java.base/java.util.Optional.orElseGet(Unknown Source)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:257)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:204)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
-	at com.cpwplc.qa.base.TestBase.initialization(TestBase.java:64)
-	at com.cpwplc.qa.endtoend.HomePage.setup(HomePage.java:29)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+              <![CDATA[java.lang.AssertionError: Home Page title not matched expected [Compare Our Best Mobile Phone Deals | Carphone Warehouse123] but found [Compare Our Best Mobile Phone Deals | Carphone Warehouse]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at com.cpw.ews.qa.testcases.HomePageTest.verify_homepage_tile_test(HomePageTest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
@@ -169,11 +82,95 @@ Driver info: driver.version: FirefoxDriver
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigate_to_mobile -->
-      </class> <!-- com.cpwplc.qa.endtoend.HomePage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- verify_homepage_tile_test -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.cpw.ews.qa.testcases.HomePageTest@78c03f1f]" name="teardown" is-config="true" duration-ms="3685" started-at="2018-05-08T18:14:49Z" finished-at="2018-05-08T18:14:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_homepage_tile_test status=FAILURE method=HomePageTest.verify_homepage_tile_test()[pri:2, instance:com.cpw.ews.qa.testcases.HomePageTest@78c03f1f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.cpw.ews.qa.testcases.HomePageTest@78c03f1f]" name="setup" is-config="true" duration-ms="9333" started-at="2018-05-08T18:14:53Z" finished-at="2018-05-08T18:15:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verify_navigation_to_pagG_page()[pri:3, instance:com.cpw.ews.qa.testcases.HomePageTest@78c03f1f]" name="verify_navigation_to_pagG_page" duration-ms="3220" started-at="2018-05-08T18:15:02Z" finished-at="2018-05-08T18:15:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_navigation_to_pagG_page -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.cpw.ews.qa.testcases.HomePageTest@78c03f1f]" name="teardown" is-config="true" duration-ms="1413" started-at="2018-05-08T18:15:05Z" finished-at="2018-05-08T18:15:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_navigation_to_pagG_page status=SUCCESS method=HomePageTest.verify_navigation_to_pagG_page()[pri:3, instance:com.cpw.ews.qa.testcases.HomePageTest@78c03f1f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.cpw.ews.qa.testcases.HomePageTest@78c03f1f]" name="endReport" is-config="true" duration-ms="265" started-at="2018-05-08T18:15:07Z" finished-at="2018-05-08T18:15:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.cpw.ews.qa.testcases.PayGPageTest@4fe3c938]" name="endReport" is-config="true" duration-ms="14" started-at="2018-05-08T18:15:07Z" finished-at="2018-05-08T18:15:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.cpw.ews.qa.testcases.PayMPageTest@5ec0a365]" name="endReport" is-config="true" duration-ms="0" started-at="2018-05-08T18:15:07Z" finished-at="2018-05-08T18:15:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.cpw.ews.qa.testcases.HomePageTest -->
+      <class name="com.cpw.ews.qa.testcases.PayGPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.cpw.ews.qa.testcases.PayGPageTest@4fe3c938]" name="setup" is-config="true" duration-ms="9341" started-at="2018-05-08T18:14:25Z" finished-at="2018-05-08T18:14:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="navigate_to_PagG_from_homepage_and_verify_pagetitle()[pri:1, instance:com.cpw.ews.qa.testcases.PayGPageTest@4fe3c938]" name="navigate_to_PagG_from_homepage_and_verify_pagetitle" duration-ms="2982" started-at="2018-05-08T18:14:34Z" finished-at="2018-05-08T18:14:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate_to_PagG_from_homepage_and_verify_pagetitle -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.cpw.ews.qa.testcases.PayGPageTest@4fe3c938]" name="teardown" is-config="true" duration-ms="1878" started-at="2018-05-08T18:14:37Z" finished-at="2018-05-08T18:14:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigate_to_PagG_from_homepage_and_verify_pagetitle status=SUCCESS method=PayGPageTest.navigate_to_PagG_from_homepage_and_verify_pagetitle()[pri:1, instance:com.cpw.ews.qa.testcases.PayGPageTest@4fe3c938] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.cpw.ews.qa.testcases.PayGPageTest -->
+      <class name="com.cpw.ews.qa.testcases.PayMPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.cpw.ews.qa.testcases.PayMPageTest@5ec0a365]" name="setup" is-config="true" duration-ms="11100" started-at="2018-05-08T18:14:08Z" finished-at="2018-05-08T18:14:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="navigate_to_PagM_from_homepage_and_verify_pagetitle()[pri:1, instance:com.cpw.ews.qa.testcases.PayMPageTest@5ec0a365]" name="navigate_to_PagM_from_homepage_and_verify_pagetitle" duration-ms="3564" started-at="2018-05-08T18:14:20Z" finished-at="2018-05-08T18:14:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate_to_PagM_from_homepage_and_verify_pagetitle -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.cpw.ews.qa.testcases.PayMPageTest@5ec0a365]" name="teardown" is-config="true" duration-ms="1895" started-at="2018-05-08T18:14:23Z" finished-at="2018-05-08T18:14:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigate_to_PagM_from_homepage_and_verify_pagetitle status=SUCCESS method=PayMPageTest.navigate_to_PagM_from_homepage_and_verify_pagetitle()[pri:1, instance:com.cpw.ews.qa.testcases.PayMPageTest@5ec0a365] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.cpw.ews.qa.testcases.PayMPageTest -->
+    </test> <!-- CPW Customer Journey -->
+  </suite> <!-- CPWPLC Test Suite -->
 </testng-results>

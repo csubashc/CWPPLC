@@ -1,4 +1,4 @@
-package com.qa.bddframemork.bdd;
+package com.cpw.ews.qa.bddframemork;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
