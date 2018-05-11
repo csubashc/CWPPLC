@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [CPWPLC Test Suite]">
-  <test name="CPW Customer Journey(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
       <class name="com.cpw.ews.qa.testcases.HomePageTest">
         <methods>
           <include name="verify_homepage_tile_test"/>
           <include name="setup"/>
+          <include name="verify_navigation_to_pagG_page"/>
           <include name="setExtent"/>
           <include name="endReport"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- com.cpw.ews.qa.testcases.HomePageTest -->
     </classes>
-  </test> <!-- CPW Customer Journey(failed) -->
-</suite> <!-- Failed suite [CPWPLC Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

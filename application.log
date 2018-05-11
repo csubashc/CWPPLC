@@ -1,0 +1,36 @@
+2018-05-11 13:20:31,864  INFO [main] HomePageTest:50 - ++++++++++ Starting test cases execution++++++++++
+2018-05-11 13:20:46,355  INFO [main] HomePageTest:52 - Browser initialized 
+2018-05-11 13:20:46,399  INFO [main] HomePageTest:62 - ++++++++++ Starting Accept Cookie Test ++++++++++
+2018-05-11 13:20:46,400  INFO [main] WebDriverEventListener:80 - Trying to find Element By : By.xpath: //*[@id="cookieagree"]
+2018-05-11 13:20:46,422  INFO [main] WebDriverEventListener:84 - Found Element By : By.xpath: //*[@id="cookieagree"]
+2018-05-11 13:20:46,428  INFO [main] WebDriverEventListener:47 - Trying to click on: [[FirefoxDriver: firefox on XP (f9c07b43-1699-427b-a6e9-7af56b919f32)] -> xpath: //*[@id="cookieagree"]]
+2018-05-11 13:20:46,895  INFO [main] WebDriverEventListener:51 - Clicked on: [[FirefoxDriver: firefox on XP (f9c07b43-1699-427b-a6e9-7af56b919f32)] -> xpath: //*[@id="cookieagree"]]
+2018-05-11 13:20:46,895  INFO [main] HomePageTest:64 - ++++++++++ End of Accept Cookie Test ++++++++++
+2018-05-11 13:20:49,040  INFO [main] HomePageTest:50 - ++++++++++ Starting test cases execution++++++++++
+2018-05-11 13:21:00,595  INFO [main] HomePageTest:52 - Browser initialized 
+2018-05-11 13:21:00,598  INFO [main] HomePageTest:70 - ++++++++++ Starting Verify Home Page Test ++++++++++
+2018-05-11 13:21:00,599  INFO [main] WebDriverEventListener:80 - Trying to find Element By : By.xpath: //*[@id="cookieagree"]
+2018-05-11 13:21:00,717  INFO [main] WebDriverEventListener:84 - Found Element By : By.xpath: //*[@id="cookieagree"]
+2018-05-11 13:21:00,717  INFO [main] WebDriverEventListener:47 - Trying to click on: [[FirefoxDriver: firefox on XP (cdf98954-4ac1-4f2b-829c-984dc3a2caff)] -> xpath: //*[@id="cookieagree"]]
+2018-05-11 13:21:01,092  INFO [main] WebDriverEventListener:51 - Clicked on: [[FirefoxDriver: firefox on XP (cdf98954-4ac1-4f2b-829c-984dc3a2caff)] -> xpath: //*[@id="cookieagree"]]
+2018-05-11 13:21:01,105  INFO [main] HomePageTest:73 - Home Page Title is :- Compare Our Best Mobile Phone Deals | Carphone Warehouse
+2018-05-11 13:21:03,056  INFO [main] HomePageTest:50 - ++++++++++ Starting test cases execution++++++++++
+2018-05-11 13:21:14,628  INFO [main] HomePageTest:52 - Browser initialized 
+2018-05-11 13:21:14,631  INFO [main] HomePageTest:82 - ++++++++++ Starting Navigate to Pay as you go Page test  ++++++++++
+2018-05-11 13:21:14,632  INFO [main] WebDriverEventListener:80 - Trying to find Element By : By.xpath: //*[@id="cookieagree"]
+2018-05-11 13:21:14,667  INFO [main] WebDriverEventListener:84 - Found Element By : By.xpath: //*[@id="cookieagree"]
+2018-05-11 13:21:14,668  INFO [main] WebDriverEventListener:47 - Trying to click on: [[FirefoxDriver: firefox on XP (dbf4bb60-0940-4071-b246-58c74368ee86)] -> xpath: //*[@id="cookieagree"]]
+2018-05-11 13:21:15,097  INFO [main] WebDriverEventListener:51 - Clicked on: [[FirefoxDriver: firefox on XP (dbf4bb60-0940-4071-b246-58c74368ee86)] -> xpath: //*[@id="cookieagree"]]
+2018-05-11 13:21:15,098  INFO [main] WebDriverEventListener:80 - Trying to find Element By : By.xpath: //li[@class='dropdown mega-dropdown' and @data-overlay-id='0']
+2018-05-11 13:21:15,105  INFO [main] WebDriverEventListener:84 - Found Element By : By.xpath: //li[@class='dropdown mega-dropdown' and @data-overlay-id='0']
+2018-05-11 13:21:15,106  INFO [main] WebDriverEventListener:47 - Trying to click on: [[FirefoxDriver: firefox on XP (dbf4bb60-0940-4071-b246-58c74368ee86)] -> xpath: //li[@class='dropdown mega-dropdown' and @data-overlay-id='0']]
+2018-05-11 13:21:15,558  INFO [main] WebDriverEventListener:51 - Clicked on: [[FirefoxDriver: firefox on XP (dbf4bb60-0940-4071-b246-58c74368ee86)] -> xpath: //li[@class='dropdown mega-dropdown' and @data-overlay-id='0']]
+2018-05-11 13:21:15,559  INFO [main] WebDriverEventListener:80 - Trying to find Element By : By.xpath: //div[@class='mega-navigation__container open']//a[contains(@href, '/mobiles/pay-as-you-go.html')]
+2018-05-11 13:21:15,570  INFO [main] WebDriverEventListener:84 - Found Element By : By.xpath: //div[@class='mega-navigation__container open']//a[contains(@href, '/mobiles/pay-as-you-go.html')]
+2018-05-11 13:21:15,570  INFO [main] WebDriverEventListener:47 - Trying to click on: [[FirefoxDriver: firefox on XP (dbf4bb60-0940-4071-b246-58c74368ee86)] -> xpath: //div[@class='mega-navigation__container open']//a[contains(@href, '/mobiles/pay-as-you-go.html')]]
+2018-05-11 13:21:15,630  INFO [main] WebDriverEventListener:71 - Exception occured: org.openqa.selenium.WebDriverException: Element <a href="/mobiles/pay-as-you-go.html"> is not clickable at point (114.625,125.94999694824219) because another element <a class="dropdown-toggle menuoptions" href="javascript:void(0)"> obscures it
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DC102297', ip: '10.44.117.239', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\chakas03\AppData\Local\Temp\rust_mozprofile.VYo4NdI7JzOL, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.3, platformVersion=10.0, moz:processID=10056, browserName=firefox, javascriptEnabled=true, platformName=XP, moz:webdriverClick=true}]
+Session ID: dbf4bb60-0940-4071-b246-58c74368ee86

@@ -3,15 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.cpw.ews.qa.testcases.PayMPageTest">
+      <class name="com.cpw.ews.qa.testcases.HomePageTest">
         <methods>
-          <include name="endReport"/>
+          <include name="verify_homepage_tile_test"/>
           <include name="setup"/>
-          <include name="navigate_to_PagM_from_homepage_and_verify_pagetitle"/>
+          <include name="verify_navigation_to_pagG_page"/>
           <include name="setExtent"/>
+          <include name="endReport"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.cpw.ews.qa.testcases.PayMPageTest -->
+      </class> <!-- com.cpw.ews.qa.testcases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

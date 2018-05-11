@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CPWPLC Test Suite">
+
+	<test name="CPW Customer Journey">
+		<classes>
+			<class name="com.cpw.ews.qa.testcases.HomePageTest"></class>
+			<class name="com.cpw.ews.qa.testcases.PayMPageTest"></class>
+			<class name="com.cpw.ews.qa.testcases.PayGPageTest"></class>
+		</classes>
+	</test>
+</suite>
